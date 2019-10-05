@@ -1,0 +1,124 @@
+body {
+  font-family: 'Lato';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+section h2 {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 992px) {
+  section h2 {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+  font-family: 'Montserrat';
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-nav {
+  margin-top: 1rem;
+  letter-spacing: 0.0625rem;
+}
+
+.nav-link, .nav-link:active, .nav-link:focus {
+  color: white;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #425EBC;
+}
+
+.navbar-toggler {
+  font-size: 80%;
+  padding: 0.8rem;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+  }
+  .navbar-brand {
+    font-size: 2em;
+    transition: font-size 0.3s;
+  }
+  .navbar-nav {
+    margin-top: 0;
+  }
+  .nav-link.active {
+    color: white;
+    background: #425EBC;
+  }
+  .navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+
+
+header {
+  padding-top: calc(6rem + 72px);
+  padding-bottom: 6rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+header h2 {
+  font-size: 1.3rem;
+  font-family: 'Lato';
+}
+
+@media (min-width: 992px) {
+  header {
+    padding-top: calc(6rem + 106px);
+    padding-bottom: 6rem;
+  }
+  header h1 {
+    font-size: 4.75em;
+    line-height: 4rem;
+  }
+  header h2 {
+    font-size: 1.75em;
+  }
+}
+
+
+a, a:focus, a:hover, a:active {
+  color: #425EBC;
+}
+
+
+.bg-primary {
+  background-color: #425EBC !important;
+}
+
+.text-primary {
+  color: #425EBC !important;
+}
