@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
   "use strict";
 
   // Update active item in navbar
@@ -19,14 +19,14 @@ $(function() {
     return false;
   });
 
-  // Shrink navbar
-  var navbarShrink = function() {
-    if ($(".navbar").offset().top > 100) {
-      $(".navbar").addClass("navbar-shrink");
-    } else {
-      $(".navbar").removeClass("navbar-shrink");
-    }
-  };
   navbarShrink();
   $(window).scroll(navbarShrink);
 });
+
+function navbarShrink() {
+  if ($(".navbar").offset().top > 100) {
+    $(".navbar").addClass("navbar-shrink");
+  } else {
+    $(".navbar").removeClass("navbar-shrink");
+  }
+};
